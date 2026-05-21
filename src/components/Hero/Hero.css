@@ -1,0 +1,105 @@
+.hero {
+  background: linear-gradient(
+    135deg,
+    var(--color-hero-bg) 0%,
+    var(--color-primary) 100%
+  );
+  color: var(--color-on-primary);
+  padding: var(--space-2xl) var(--space-xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.hero__content {
+  max-width: 720px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xl);
+}
+
+.hero__headline {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-weight-heading);
+  line-height: var(--line-height-heading);
+  letter-spacing: var(--letter-spacing-heading);
+  color: var(--color-on-primary);
+  margin: 0;
+}
+
+.hero__subheadline {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-subheading);
+  font-weight: var(--font-weight-subheading);
+  line-height: var(--line-height-subheading);
+  color: var(--color-on-primary);
+  margin: 0;
+  opacity: 0.9;
+}
+
+.hero__value-prop {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-sans);
+  color: var(--color-on-primary);
+  margin: 0;
+  opacity: 0.85;
+}
+
+.hero__cta-group {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero__btn {
+  display: inline-block;
+  padding: var(--space-md) var(--space-xl);
+  border-radius: var(--rounded-md);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: var(--font-size-sans);
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.hero__btn:hover {
+  opacity: 0.9;
+}
+
+.hero__btn--primary {
+  background-color: var(--color-accent);
+  color: var(--color-on-accent);
+  border: 2px solid var(--color-accent);
+}
+
+.hero__btn--secondary {
+  background-color: transparent;
+  color: var(--color-on-primary);
+  border: 2px solid var(--color-on-primary);
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: var(--space-2xl) var(--space-md);
+    min-height: 70vh;
+  }
+
+  .hero__cta-group {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .hero__btn {
+    width: 100%;
+    text-align: center;
+  }
+}

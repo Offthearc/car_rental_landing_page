@@ -1,4 +1,5 @@
 import './App.css'
+import { Hero } from './components/Hero/Hero'
 import { NavHeader } from './components/NavHeader/NavHeader'
 
 function App() {
@@ -6,11 +7,7 @@ function App() {
     <>
       <NavHeader />
       <main className="app">
-        <h1 className="app__title">DriveEasy Car Rentals</h1>
-        <p className="app__subtitle">
-          Your journey starts here. Browse our fleet, choose your car, and hit
-          the road.
-        </p>
+        <Hero />
       </main>
     </>
   )
