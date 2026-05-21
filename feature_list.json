@@ -1,0 +1,114 @@
+{
+  "project": "car_rental_landing_page",
+  "description": "A modern, visually appealing landing page for DriveEasy Car Rentals — a fictional car rental company. Features a hero section, fleet showcase, how-it-works, testimonials, pricing plans, and a contact/footer section.",
+  "rules": {
+    "one_feature_at_a_time": true,
+    "require_tests_to_close": true,
+    "valid_status": ["pending", "in_progress", "done", "blocked"]
+  },
+  "features": [
+    {
+      "id": "F001",
+      "name": "nav_header",
+      "title": "Navigation Header",
+      "description": "Sticky top navigation bar with the DriveEasy logo, nav links (Home, Fleet, How It Works, Pricing, Contact), and a 'Book Now' CTA button. Collapses to a hamburger menu on mobile.",
+      "acceptance": [
+        "Logo and brand name visible",
+        "All nav links rendered and anchor-scroll to their sections",
+        "Book Now button present with primary styling",
+        "Component uses only design tokens — no hardcoded colors/spacing",
+        "Accessible: keyboard-navigable, all interactive elements have labels"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "F002",
+      "name": "hero_section",
+      "title": "Hero Section",
+      "description": "Full-width hero with a bold headline ('Your Journey Starts Here'), a subheadline, a brief value proposition, and two CTAs: 'Browse Fleet' and 'Learn More'. Includes a hero background image placeholder (CSS gradient).",
+      "acceptance": [
+        "Headline, subheadline, and value proposition text rendered",
+        "Two CTA buttons rendered with correct primary/secondary styling",
+        "Background uses a CSS gradient via design tokens",
+        "Visually centered layout on desktop and mobile",
+        "Section has id='home' for anchor nav"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "F003",
+      "name": "fleet_section",
+      "title": "Fleet Showcase",
+      "description": "Grid of car cards, each showing a car name, category (Economy / SUV / Luxury), price per day, key specs (seats, transmission, fuel), and a 'Rent Now' button. Uses made-up data for 6 cars.",
+      "acceptance": [
+        "At least 6 car cards rendered from a static data array",
+        "Each card shows: image placeholder, name, category badge, price/day, specs, Rent Now button",
+        "Cards use the card design token (background, radius, padding)",
+        "Category badges use appropriate color tokens",
+        "Section has id='fleet' for anchor nav",
+        "Responsive grid (1 col mobile, 2 col tablet, 3 col desktop)"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "F004",
+      "name": "how_it_works_section",
+      "title": "How It Works Section",
+      "description": "Three-step process section: 1. Choose Your Car, 2. Book Online, 3. Hit the Road. Each step has an icon (emoji or SVG), a title, and a short description.",
+      "acceptance": [
+        "Three steps rendered with icon, title, description",
+        "Visually distinct step numbers or icons",
+        "Section has id='how-it-works' for anchor nav",
+        "Responsive layout (stack on mobile, row on desktop)"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "F005",
+      "name": "testimonials_section",
+      "title": "Testimonials Section",
+      "description": "Customer testimonials carousel/grid with 4 made-up reviews. Each review has avatar initials, customer name, rating (stars), and quote text.",
+      "acceptance": [
+        "At least 4 testimonial cards rendered from static data",
+        "Each card shows: avatar (initials in a colored circle), name, star rating, quote",
+        "Uses card design token for styling",
+        "Section has id='testimonials' (can be omitted from nav but must exist in DOM)"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "F006",
+      "name": "pricing_section",
+      "title": "Pricing Plans Section",
+      "description": "Three pricing tiers: Basic, Standard, Premium. Each tier lists included features, price per day, and a CTA. One tier is visually highlighted as 'Most Popular'.",
+      "acceptance": [
+        "Three pricing cards rendered from static data",
+        "Each card: tier name, price/day, feature list, CTA button",
+        "Most Popular card visually distinguished (border, badge, or background)",
+        "Section has id='pricing' for anchor nav",
+        "Responsive layout (stack on mobile, row on desktop)"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "F007",
+      "name": "contact_footer",
+      "title": "Contact Section and Footer",
+      "description": "Combined contact section with a simple contact form (name, email, message fields + submit button) and a footer with company info, quick links, and copyright.",
+      "acceptance": [
+        "Contact form rendered with name, email, message, submit button",
+        "Form fields have accessible labels",
+        "Footer has: logo/company name, quick nav links, contact info (made-up address/phone), copyright",
+        "Section has id='contact' for anchor nav",
+        "Form submission shows a success message (no real API call needed)"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "FDEPLOY",
+      "name": "Deploy to Vercel",
+      "status": "pending",
+      "verification": "vercel --prod returns a live https:// URL; URL reported to user"
+    }
+  ]
+}
