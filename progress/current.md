@@ -1,8 +1,8 @@
-Feature in progress: F006 — Pricing Plans Section
+Feature in progress: F007 — Contact Section and Footer
 
 Plan:
-- Create src/data/pricing.ts with PricingPlan interface and 3 static entries (Basic, Standard, Premium)
-- Create src/components/PricingSection/PricingCard.tsx and PricingCard.css (tier name, badge for featured, price, features list, CTA button)
-- Create src/components/PricingSection/PricingSection.tsx and PricingSection.css (section wrapper with 3-column grid on desktop)
-- Update src/App.tsx to render PricingSection after TestimonialsSection
-- Create tests/PricingSection.test.tsx validating all acceptance criteria
+- Create src/hooks/useContactForm.ts with form state, validation, and submission handler
+- Create src/components/ContactSection/ContactSection.tsx and ContactSection.css (form with name/email/message fields and success message)
+- Create src/components/Footer/Footer.tsx and Footer.css (brand column, quick links, contact info, copyright)
+- Update src/App.tsx to render ContactSection and Footer after PricingSection
+- Create tests/ContactSection.test.tsx and tests/Footer.test.tsx validating all acceptance criteria

@@ -102,7 +102,7 @@
         "Section has id='contact' for anchor nav",
         "Form submission shows a success message (no real API call needed)"
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "FDEPLOY",

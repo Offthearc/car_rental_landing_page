@@ -1,5 +1,7 @@
 import './App.css'
+import { ContactSection } from './components/ContactSection/ContactSection'
 import { FleetSection } from './components/FleetSection/FleetSection'
+import { Footer } from './components/Footer/Footer'
 import { HeroSection } from './components/HeroSection/HeroSection'
 import { HowItWorksSection } from './components/HowItWorksSection/HowItWorksSection'
 import { NavHeader } from './components/NavHeader/NavHeader'
@@ -16,7 +18,9 @@ function App() {
         <HowItWorksSection />
         <TestimonialsSection />
         <PricingSection />
+        <ContactSection />
       </main>
+      <Footer />
     </>
   )
 }
