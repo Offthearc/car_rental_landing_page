@@ -1,0 +1,102 @@
+.car-card {
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+  border-radius: var(--rounded-lg);
+  box-shadow: 0 4px 16px var(--color-card-shadow);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.car-card__image {
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--rounded-lg) var(--rounded-lg) 0 0;
+}
+
+.car-card__icon {
+  font-size: 3rem;
+}
+
+.car-card__body {
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  flex: 1;
+}
+
+.car-card__badge {
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  border-radius: var(--rounded-full);
+  padding: var(--space-xs) var(--space-md);
+  font-size: 12px;
+  font-weight: 600;
+  font-family: var(--font-sans);
+  align-self: flex-start;
+}
+
+.car-card__name {
+  font-family: var(--font-subheading);
+  font-size: var(--font-size-subheading);
+  font-weight: var(--font-weight-subheading);
+  line-height: var(--line-height-subheading);
+  letter-spacing: var(--letter-spacing-subheading);
+  color: var(--color-on-surface);
+  margin: 0;
+}
+
+.car-card__price {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-sans);
+  color: var(--color-on-surface-variant);
+  margin: 0;
+}
+
+.car-card__price-value {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-mono);
+  font-weight: var(--font-weight-mono);
+  color: var(--color-on-surface);
+}
+
+.car-card__specs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.car-card__spec {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--color-on-surface-variant);
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.car-card__cta {
+  margin-top: auto;
+  padding: var(--space-md) var(--space-xl);
+  background-color: var(--color-accent);
+  color: var(--color-on-accent);
+  border: none;
+  border-radius: var(--rounded-md);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: var(--font-size-sans);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: 100%;
+}
+
+.car-card__cta:hover {
+  background-color: var(--color-accent-dark);
+}

@@ -1,8 +1,8 @@
-Feature in progress: F002 — Hero Section (rename fix)
+Feature in progress: F003 — Fleet Showcase
 
 Plan:
-- Create src/components/HeroSection/HeroSection.tsx (rename from Hero/Hero.tsx, update export/import)
-- Create src/components/HeroSection/HeroSection.css (rename from Hero/Hero.css)
-- Update src/App.tsx import and JSX tag to use HeroSection
-- Rename tests/Hero.test.tsx to tests/HeroSection.test.tsx and update import path
-- Delete src/components/Hero/ directory
+- Create src/data/cars.ts with Car interface and 6 static car entries
+- Create src/components/FleetSection/CarCard.tsx and CarCard.css for individual car display
+- Create src/components/FleetSection/FleetSection.tsx and FleetSection.css for the responsive grid
+- Update src/App.tsx to render FleetSection after HeroSection
+- Create tests/FleetSection.test.tsx with acceptance criterion tests
