@@ -19,7 +19,7 @@
         "Component uses only design tokens — no hardcoded colors/spacing",
         "Accessible: keyboard-navigable, all interactive elements have labels"
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "F002",
