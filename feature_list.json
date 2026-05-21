@@ -74,7 +74,7 @@
         "Uses card design token for styling",
         "Section has id='testimonials' (can be omitted from nav but must exist in DOM)"
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "F006",

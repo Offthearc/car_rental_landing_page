@@ -1,8 +1,8 @@
-Feature in progress: F004 — How It Works Section
+Feature in progress: F005 — Testimonials Section
 
 Plan:
-- Create src/components/HowItWorksSection/HowItWorksSection.tsx with 3 hardcoded step cards (step number circles, emoji icons, titles, descriptions)
-- Create src/components/HowItWorksSection/HowItWorksSection.css using only design tokens for colors, spacing, and radius
-- Update src/App.tsx to render HowItWorksSection after FleetSection
-- Create tests/HowItWorksSection.test.tsx validating all acceptance criteria (section id, heading, step titles, step numbers)
-- Run ./init.sh to verify everything passes
+- Create src/data/testimonials.ts with Testimonial interface and 4 static entries
+- Create src/components/TestimonialsSection/TestimonialCard.tsx and TestimonialCard.css (avatar circle, name, stars, quote)
+- Create src/components/TestimonialsSection/TestimonialsSection.tsx and TestimonialsSection.css (section wrapper, 2-col grid)
+- Update src/App.tsx to render TestimonialsSection after HowItWorksSection
+- Create tests/TestimonialsSection.test.tsx validating all acceptance criteria (section id, heading, 4 names, 4 quotes)
