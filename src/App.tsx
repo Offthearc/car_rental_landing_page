@@ -1,5 +1,5 @@
 import './App.css'
-import { Hero } from './components/Hero/Hero'
+import { HeroSection } from './components/HeroSection/HeroSection'
 import { NavHeader } from './components/NavHeader/NavHeader'
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <>
       <NavHeader />
       <main className="app">
-        <Hero />
+        <HeroSection />
       </main>
     </>
   )

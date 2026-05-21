@@ -1,6 +1,6 @@
-import './Hero.css'
+import './HeroSection.css'
 
-export function Hero() {
+export function HeroSection() {
   return (
     <section id="home" className="hero">
       <div className="hero__content">
