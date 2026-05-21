@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './Nav.css'
+import './NavHeader.css'
 
 const NAV_LINKS = [
   { label: 'Home', href: '#home' },
@@ -9,7 +9,7 @@ const NAV_LINKS = [
   { label: 'Contact', href: '#contact' },
 ]
 
-export function Nav() {
+export function NavHeader() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   const toggleMenu = () => {

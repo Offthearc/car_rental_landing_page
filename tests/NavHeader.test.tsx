@@ -1,16 +1,16 @@
 import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { describe, expect, it } from 'vitest'
-import { Nav } from '../src/components/Nav/Nav'
+import { NavHeader } from '../src/components/NavHeader/NavHeader'
 
-describe('Nav', () => {
+describe('NavHeader', () => {
   it('renders the DriveEasy logo text', () => {
-    render(<Nav />)
+    render(<NavHeader />)
     expect(screen.getByText('DriveEasy')).toBeInTheDocument()
   })
 
   it('renders all five nav links', () => {
-    render(<Nav />)
+    render(<NavHeader />)
     expect(screen.getByRole('link', { name: 'Home' })).toBeInTheDocument()
     expect(screen.getByRole('link', { name: 'Fleet' })).toBeInTheDocument()
     expect(
@@ -21,12 +21,12 @@ describe('Nav', () => {
   })
 
   it('renders the Book Now CTA button', () => {
-    render(<Nav />)
+    render(<NavHeader />)
     expect(screen.getByRole('link', { name: 'Book Now' })).toBeInTheDocument()
   })
 
   it('nav links have correct anchor hrefs', () => {
-    render(<Nav />)
+    render(<NavHeader />)
     expect(screen.getByRole('link', { name: 'Home' })).toHaveAttribute(
       'href',
       '#home',
@@ -51,7 +51,7 @@ describe('Nav', () => {
 
   it('hamburger button toggles mobile menu visibility on click', async () => {
     const user = userEvent.setup()
-    render(<Nav />)
+    render(<NavHeader />)
 
     // The hamburger button is visually hidden on desktop via CSS (display:none),
     // but in jsdom media queries are not evaluated, so we query with hidden:true.
@@ -76,7 +76,7 @@ describe('Nav', () => {
   })
 
   it('uses a nav element with role navigation', () => {
-    render(<Nav />)
+    render(<NavHeader />)
     expect(screen.getByRole('navigation')).toBeInTheDocument()
   })
 })

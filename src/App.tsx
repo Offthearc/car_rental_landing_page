@@ -1,10 +1,10 @@
 import './App.css'
-import { Nav } from './components/Nav/Nav'
+import { NavHeader } from './components/NavHeader/NavHeader'
 
 function App() {
   return (
     <>
-      <Nav />
+      <NavHeader />
       <main className="app">
         <h1 className="app__title">DriveEasy Car Rentals</h1>
         <p className="app__subtitle">
