@@ -1,8 +1,8 @@
-Feature in progress: F003 — Fleet Showcase
+Feature in progress: F004 — How It Works Section
 
 Plan:
-- Create src/data/cars.ts with Car interface and 6 static car entries
-- Create src/components/FleetSection/CarCard.tsx and CarCard.css for individual car display
-- Create src/components/FleetSection/FleetSection.tsx and FleetSection.css for the responsive grid
-- Update src/App.tsx to render FleetSection after HeroSection
-- Create tests/FleetSection.test.tsx with acceptance criterion tests
+- Create src/components/HowItWorksSection/HowItWorksSection.tsx with 3 hardcoded step cards (step number circles, emoji icons, titles, descriptions)
+- Create src/components/HowItWorksSection/HowItWorksSection.css using only design tokens for colors, spacing, and radius
+- Update src/App.tsx to render HowItWorksSection after FleetSection
+- Create tests/HowItWorksSection.test.tsx validating all acceptance criteria (section id, heading, step titles, step numbers)
+- Run ./init.sh to verify everything passes
