@@ -29,10 +29,12 @@ export function TestimonialCard({ testimonial }: TestimonialCardProps) {
           style={{ background: testimonial.avatarColor }}
           aria-hidden="true"
         >
-          {testimonial.initials}
+          {testimonial.avatarInitials}
         </div>
         <div className="testimonial-card__identity">
-          <strong className="testimonial-card__name">{testimonial.name}</strong>
+          <strong className="testimonial-card__name">
+            {testimonial.customerName}
+          </strong>
           <small className="testimonial-card__location">
             {testimonial.location}
           </small>

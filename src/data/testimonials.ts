@@ -1,7 +1,7 @@
 export interface Testimonial {
   id: string
-  name: string
-  initials: string
+  customerName: string
+  avatarInitials: string
   avatarColor: string
   rating: number
   quote: string
@@ -11,8 +11,8 @@ export interface Testimonial {
 export const testimonials: Testimonial[] = [
   {
     id: 't1',
-    name: 'Sarah M.',
-    initials: 'SM',
+    customerName: 'Sarah M.',
+    avatarInitials: 'SM',
     avatarColor: '#1B2B5E',
     rating: 5,
     quote:
@@ -21,8 +21,8 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: 't2',
-    name: 'James T.',
-    initials: 'JT',
+    customerName: 'James T.',
+    avatarInitials: 'JT',
     avatarColor: '#F59E0B',
     rating: 5,
     quote:
@@ -31,8 +31,8 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: 't3',
-    name: 'Priya K.',
-    initials: 'PK',
+    customerName: 'Priya K.',
+    avatarInitials: 'PK',
     avatarColor: '#2A4080',
     rating: 4,
     quote:
@@ -41,8 +41,8 @@ export const testimonials: Testimonial[] = [
   },
   {
     id: 't4',
-    name: 'Marcus R.',
-    initials: 'MR',
+    customerName: 'Marcus R.',
+    avatarInitials: 'MR',
     avatarColor: '#16A34A',
     rating: 5,
     quote:
