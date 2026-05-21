@@ -1,0 +1,51 @@
+.pricing-section {
+  background-color: var(--color-surface-variant);
+  padding: var(--space-2xl) var(--space-md);
+}
+
+.pricing-section__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.pricing-section__header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.pricing-section__heading {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-weight-heading);
+  line-height: var(--line-height-heading);
+  letter-spacing: var(--letter-spacing-heading);
+  color: var(--color-primary);
+  margin: 0;
+}
+
+.pricing-section__subheading {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-subheading);
+  font-weight: var(--font-weight-sans);
+  color: var(--color-on-surface-variant);
+  margin: 0;
+}
+
+.pricing-section__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  align-items: stretch;
+}
+
+@media (min-width: 1024px) {
+  .pricing-section__grid {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+}

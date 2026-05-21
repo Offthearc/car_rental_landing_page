@@ -1,8 +1,8 @@
-Feature in progress: F005 — Testimonials Section
+Feature in progress: F006 — Pricing Plans Section
 
 Plan:
-- Create src/data/testimonials.ts with Testimonial interface and 4 static entries
-- Create src/components/TestimonialsSection/TestimonialCard.tsx and TestimonialCard.css (avatar circle, name, stars, quote)
-- Create src/components/TestimonialsSection/TestimonialsSection.tsx and TestimonialsSection.css (section wrapper, 2-col grid)
-- Update src/App.tsx to render TestimonialsSection after HowItWorksSection
-- Create tests/TestimonialsSection.test.tsx validating all acceptance criteria (section id, heading, 4 names, 4 quotes)
+- Create src/data/pricing.ts with PricingPlan interface and 3 static entries (Basic, Standard, Premium)
+- Create src/components/PricingSection/PricingCard.tsx and PricingCard.css (tier name, badge for featured, price, features list, CTA button)
+- Create src/components/PricingSection/PricingSection.tsx and PricingSection.css (section wrapper with 3-column grid on desktop)
+- Update src/App.tsx to render PricingSection after TestimonialsSection
+- Create tests/PricingSection.test.tsx validating all acceptance criteria
