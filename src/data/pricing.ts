@@ -1,16 +1,16 @@
 export interface PricingPlan {
   id: string
-  tier: string
+  tierName: string
   pricePerDay: number
   features: string[]
-  featured: boolean
+  isPopular: boolean
   ctaLabel: string
 }
 
 export const pricingPlans: PricingPlan[] = [
   {
     id: 'basic',
-    tier: 'Basic',
+    tierName: 'Basic',
     pricePerDay: 29,
     features: [
       'Economy vehicles',
@@ -18,12 +18,12 @@ export const pricingPlans: PricingPlan[] = [
       'Basic insurance',
       '24/7 roadside assistance',
     ],
-    featured: false,
+    isPopular: false,
     ctaLabel: 'Get Started',
   },
   {
     id: 'standard',
-    tier: 'Standard',
+    tierName: 'Standard',
     pricePerDay: 59,
     features: [
       'Economy & SUV vehicles',
@@ -33,12 +33,12 @@ export const pricingPlans: PricingPlan[] = [
       'Free GPS navigation',
       'One free driver upgrade',
     ],
-    featured: true,
+    isPopular: true,
     ctaLabel: 'Most Popular',
   },
   {
     id: 'premium',
-    tier: 'Premium',
+    tierName: 'Premium',
     pricePerDay: 99,
     features: [
       'All vehicle classes',
@@ -49,7 +49,7 @@ export const pricingPlans: PricingPlan[] = [
       'Airport pickup included',
       'Priority booking',
     ],
-    featured: false,
+    isPopular: false,
     ctaLabel: 'Go Premium',
   },
 ]

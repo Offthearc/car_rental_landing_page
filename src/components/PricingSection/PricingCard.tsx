@@ -8,21 +8,21 @@ interface PricingCardProps {
 export function PricingCard({ plan }: PricingCardProps) {
   return (
     <article
-      className={`pricing-card${plan.featured ? ' pricing-card--featured' : ''}`}
+      className={`pricing-card${plan.isPopular ? ' pricing-card--featured' : ''}`}
     >
-      {plan.featured && (
+      {plan.isPopular && (
         <span className="pricing-card__badge" aria-label="Most Popular plan">
           Most Popular
         </span>
       )}
-      <h3 className="pricing-card__tier">{plan.tier}</h3>
+      <h3 className="pricing-card__tier">{plan.tierName}</h3>
       <div className="pricing-card__price">
         <span className="pricing-card__price-amount">${plan.pricePerDay}</span>
         <span className="pricing-card__price-unit">/ day</span>
       </div>
       <ul
         className="pricing-card__features"
-        aria-label={`${plan.tier} features`}
+        aria-label={`${plan.tierName} features`}
       >
         {plan.features.map((feature) => (
           <li key={feature} className="pricing-card__feature">
